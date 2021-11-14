@@ -4,9 +4,10 @@
 sudo apt update
 yes | sudo apt full-upgrade
 
-#INSTALL GIT, PYTHON3
+#INSTALL GIT, PYTHON3, libffi-dev
 yes | sudo apt install git
 yes | sudo apt-get install python3-pip
+yes | sudo apt-get install libffi-dev libssl-dev
 
 #INSTALL DOCKER, PORTAINER, DOCKER COMPOSE
 curl -fsSL https://get.docker.com -o get-docker.sh
